@@ -1,0 +1,18 @@
+
+
+{"status":100,"statusDetails":"\u0e1e\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25","alert_message":"","results":{"dlt_unit_id":"001000000000000136440113326","dlt_vehicle_id":"6 - 0102","dlt_province_name_th":"\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e\u0e21\u0e2b\u0e32\u0e19\u0e04\u0e23"}}
+
+
+{"status":100,"statusDetails":"\u0e1e\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25","alert_message":"","results":{"dlt_unit_id":"049000600000863835027270045","dlt_vehicle_id":"7 - 0045","dlt_province_name_th":"\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e\u0e21\u0e2b\u0e32\u0e19\u0e04\u0e23"}}
+
+
+{"status":100,"statusDetails":"\u0e1e\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25","alert_message":"","results":{"dlt_unit_id":"049000600000863835027270409","dlt_vehicle_id":"7 - 0409","dlt_province_name_th":"\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e\u0e21\u0e2b\u0e32\u0e19\u0e04\u0e23"}}
+
+
+{"status":100,"statusDetails":"\u0e1e\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25","alert_message":"","results":{"dlt_unit_id":"049000600000863835027270474","dlt_vehicle_id":"7 - 0474","dlt_province_name_th":"\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e\u0e21\u0e2b\u0e32\u0e19\u0e04\u0e23"}}
+
+
+{"status":100,"statusDetails":"\u0e1e\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25","alert_message":"","results":{"dlt_unit_id":"049000600000863835027151864","dlt_vehicle_id":"5 - 1864","dlt_province_name_th":"\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e\u0e21\u0e2b\u0e32\u0e19\u0e04\u0e23"}}
+
+
+{"status":100,"statusDetails":"\u0e1e\u0e1a\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25","alert_message":"","results":{"dlt_unit_id":"049000600000863835027271589","dlt_vehicle_id":"7 - 1589","dlt_province_name_th":"\u0e01\u0e23\u0e38\u0e07\u0e40\u0e17\u0e1e\u0e21\u0e2b\u0e32\u0e19\u0e04\u0e23"}}

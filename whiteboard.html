@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th-TH">
+<head>
+  <meta charset="utf-8" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap/4.0.0-alpha.5/bootstrap.min.css" crossorigin="anonymous">
+
+  <!--library-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap4/bootstrap.min.js"></script>-->
+  <script src="js/angularjs/1.4.8/angular.min.js"></script>
+  <script src="js/angularjs/1.4.8/angular-route.min.js"></script>
+  <script src="js/angularjs/1.4.8/angular-cookies.min.js"></script>
+  
+  <script src="js/app.js"></script>
+  <script src="js/app_service.js"></script>
+  <!--<script src="js/app_route.js"></script>-->
+  <script src="js/controller/MainController.js"></script>
+  <script src="js/controller/BusController.js"></script>
+  <script src="js/controller/MapController.js"></script>
+
+  <script src="js/date.format.js"></script>
+  
+
+  <!--<base href="http://localhost/dltbus/">-->
+</head>
+<body>
+<div ng-app="myApp">
+<div class="container">
+  <div class="row"> <!-- start row 1 -->
+    <div class="col">
+      <p><a href="#/">Main</a></p>
+      <p><a href="#main2">Main2</a></p>
+      <a href="#Map">Red</a>
+      
+    </div>
+  </div> <!-- end row 1 -->
+
+<hr />
+
+  <div ng-controller="MainCtrl">
+    <div class="row"> <!-- start row 2 -->
+      <div class="col">
+            <!--<p>Name : <input type="text" ng-model="firstName"></p>-->
+            <h1>Hello {{pageTitle}}</h1>
+      </div>
+    </div> <!-- end row 2 -->
+  </div> <!-- end MainCtrl -->
+
+  <div ng-controller="BusCtrl">
+    <div class="row"> <!-- start row 3 -->
+      <div class="col-4 col-md-4">
+
+        <div class="form-group">
+          <label for="licenseplate">ค้นหาแผ่นป้ายทะเบียน:</label>
+          <input type="text" class="form-control" id="licenseplate" ng-model="searchText">
+        </div> <!-- end form-group -->
+
+        <div style="height: 300px; overflow-y: scroll;">
+        <!--<div class="list-group" ng-repeat="bus in DTLBus.bus | filter:searchText">
+          <button type="button" class="list-group-item" ng-click="selectBus(bus.results.dlt_unit_id)" style="cursor:pointer">
+            <span class="glyphicon glyphicon-road"></span>
+            
+          </button>
+        </div>-->
+        <div class="list-group">
+          <a ng-href="#/Map?key={{bus.results.dlt_unit_id}}" class="list-group-item list-group-item-action" ng-repeat="bus in DTLBus.bus | filter:searchText" ng-click="selectBus(bus.results.dlt_unit_id)"> 
+            {{ bus.results.dlt_vehicle_id }}
+            {{ bus.results.dlt_province_name_th }}
+          </a>
+        </div> <!-- end list-group -->
+        </div> <!-- end scroller -->
+
+      </div>
+      <div class="col-8 col-md-8">
+          <div ng-view></div>
+            <!--<pre>$location.path() = {{$location.path()}}</pre>
+            <pre>$route.current.templateUrl = {{$route.current.templateUrl}}</pre>
+            <pre>$route.current.params = {{$route.current.params}}</pre>
+            <pre>$route.current.scope.name = {{$route.current.scope.name}}</pre>
+            <pre>$routeParams = {{$routeParams}}</pre>-->
+            
+      </div>
+    </div> <!-- end row 3 -->
+  </div> <!-- end BusCtrl -->
+    
+</div> <!-- end container -->
+</div> <!-- end myApp -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/tether1.3.7/tether.min.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap4/bootstrap.min.js"crossorigin="anonymous"></script>
+    <!--<script>var dateFormat = require('dateformat'); </script>-->
+</body>
+</html>

@@ -1,0 +1,6 @@
+แผ่นที่ (Map)<br/>
+<!--Final : {{finalLink}}-->
+<!--<a ng-href="{{finalLink}}">Link</a>-->
+{{finalLink}}
+<!--<img ng-show="isShowLoadingGif" src="img/animal.gif" alt="loading-img"> <span ng-show="isShowLoadingGif"> Loading Map</span>-->
+<iframe style="width:100%;height:700px"  iframe-onload="iframeLoadedCallBack()" src="{{finalLink | trustAsResourceUrl}}"></iframe>
